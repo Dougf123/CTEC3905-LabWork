@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: darkblue;
+    width: 15vw;
+    flex-shrink: 0;
+}
+
+nav a{
+    background-color: yellow;
+    color: black;
+    padding: 1em;
+    margin: 1em;
+
+    transition: background-color 0.8s;
+}
+
+nav a:hover{
+    background-color: orange;
+}
+
+.headerclass{
+    background-color: red;
+    color: white;
+    font-family: cursive;
+}
+
+.mainclass{
+    display: flex;
+    background-color: green;
+    width: 85vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-sizing: border-box;
+}
+
+header, main, section {
+    overflow: auto;
+}
