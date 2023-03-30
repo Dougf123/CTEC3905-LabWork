@@ -1,0 +1,37 @@
+/* body {
+    overflow: hidden;
+} */
+header {
+    text-align: center;
+    font-family: sans-serif;
+}
+header img {
+    width: 12em;
+    animation: appear 3.5s forwards ease-out;
+}
+
+header img:nth-of-type(1){
+    transform: translateX(-5vw) scale(0.4);
+}
+header img:nth-of-type(2) {
+    transform: translateY(5vw) scale(0.4);
+}
+header img :nth-of-type(3) {
+    transform: translateX(5vw) scale(0.4);
+}
+
+img.active {
+    transform: rotateZ(2turn);
+}
+
+@keyframes appear {
+    10% {
+        transform: translateY(-1vw) scale(1.5)
+    }
+    90% {
+        transform: none;
+    }
+    100% {
+        transform: rotateY(2turn);
+    }
+}
